@@ -1,21 +1,31 @@
 body {
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+
 }
 
 
 /* nav */
 .navbar {
-  padding-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 100px;
   padding-right: 100px;
   background-color: #ffffff;
-  /* align-items: center; */
 }
+
 
 @media (max-width: 750px) {
   .navbar {  
     padding-left: 50px;
     padding-right: 50px;
+   }
+ }
+
+ @media (max-width: 400px) {
+  .navbar {  
+    padding-left: 0px;
+    padding-right: 0px;
    }
  }
 
@@ -73,18 +83,30 @@ body {
 /* NAVBAR */
 
 
+
+
+/* head */
+
 .frame {
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
   text-align: center;
-  margin-left: 100px;
-  margin-right: 100px;
   padding-bottom: 50px;
 }
+
 
 @media (max-width: 900px) {
   .frame {
     margin-left: 5px;
     margin-right: 5px;
+   }
+ }
+
+ @media (max-width: 400px) {
+  .frame {
+    margin-left: 0px;
+    margin-right: 0px;
    }
  }
 
@@ -153,7 +175,7 @@ body {
   text-align: center;
   padding: 30px;
   border-radius: 15px;
-  position: relative; /* Add position relative */
+  position: relative;
 }
 
 .content:hover {
@@ -166,7 +188,7 @@ body {
   border-radius: 5px;
   text-align: center;
   position: relative; 
-  overflow: hidden; /* Add this to hide overflow content */
+  overflow: hidden;
 }
 
 .imgyt::before {
@@ -176,9 +198,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom, #d42a5a00, #D42A5B); /* Removed !important */
+  background-image: linear-gradient(to bottom, #d42a5a00, #D42A5B);
   opacity: 0;
-  transition: opacity 0.3s ease; /* Added transition for smooth effect */
+  transition: opacity 0.3s ease;
 }
 
 .imgyt:hover::before {
@@ -319,7 +341,8 @@ background-color: #FBD0D9;
   font-weight: 400;
   line-height: 32.40px;
   word-wrap: break-word;
-}/* section4 */
+}
+/* section4 */
 
 .Container4 {
   /* width: 100%; */
@@ -374,6 +397,7 @@ background-color: #FBD0D9;
 }
 
 .t4 {
+  align-items: center;
   color: #470A1F;
   font-size: 4rem;
   font-weight: 800;
@@ -445,10 +469,11 @@ background-color: #FBD0D9;
 .container5 {
   width: 80%;
   margin-top: 50px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
   transition: transform 0.3s ease-in-out;
 }
+
 .container5:hover{
   transform: scale(1.1);
 }
@@ -649,9 +674,16 @@ background-color: #ffc3d8;
 
 
 #contact {
+  width: 100%;
   margin-top: 50px;
   padding: 40px 0;
   background-color: #470A1F;
+}
+
+@media (max-width: 300px) {
+  #contact {
+    width: 100%
+  }
 }
 
 .list {
@@ -712,8 +744,9 @@ background-color: #ffc3d8;
 }
 
 .end-text {
-  padding-top: 90px;
+  padding-top: 50px;
 }
+
 
 .end-text p {
   color: #ffffffbf;
